@@ -1,4 +1,4 @@
-# SQUARE ENIX - FrontEnd Developer Test
+# FrontEnd Developer Test
 
 Given the following mockup:
 
@@ -59,7 +59,7 @@ I wrote unit tests in a BDD way covering the most important parts of the project
 When you're showcasing what you know, it's hard to stay in the borders of not over engineering. Here I decided to use redux with redux-saga to handle the async calls. For example I could have achieved just using async/await into the specific components, or sending more parameters to the API, or managing better all the info retrieved by the APIs.
 
 ### Deployed version
-I've deployed this project on [Netlify](https://square-enix-demo.netlify.com/) if you don't want to run it locally 🙂
+I've deployed this project on [Netlify](https://articles-listing-demo.netlify.com/) if you don't want to run it locally 🙂
 
 ## Available Scripts
 
