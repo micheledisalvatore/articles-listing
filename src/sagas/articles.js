@@ -10,7 +10,7 @@ import { GET_ARTICLES } from '../constants/articles';
 import { getArticlesSuccess } from '../actions/articles';
 import articlesSchema from '../schemas/articles';
 
-export const fetchArticles = () => window.fetch('http://www.mocky.io/v2/5c4a0ace340000da09269450').then(response => response.json());
+export const fetchArticles = () => window.fetch('//www.mocky.io/v2/5c4a0ace340000da09269450').then(response => response.json());
 
 export function* getRemoteArticles() {
   try {
