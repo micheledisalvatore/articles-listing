@@ -10,7 +10,7 @@ const defaultState = {
 
 const setArticles = (state, { articles }) => assocPath(['list'], merge(state.list, articles), state);
 const setSelection = (state, { articleId }) => assocPath(['selected'], articleId, state);
-const unsetSelection = (state) => assocPath(['selected'], null, state);
+const unsetSelection = state => assocPath(['selected'], null, state);
 
 export default handleActions({
   [GET_ARTICLES_SUCCESS]: setArticles,

@@ -25,7 +25,7 @@ describe('Given a Grid component', () => {
 
     afterEach(() => {
       getArticlesActionMock.mockReset();
-    })
+    });
 
     it('should match the snapshot', () => {
       expect(wrapper).toMatchSnapshot();
@@ -45,7 +45,7 @@ describe('Given a Grid component', () => {
           articles: {
             1: {
               id: 1,
-            }
+            },
           },
         });
       });

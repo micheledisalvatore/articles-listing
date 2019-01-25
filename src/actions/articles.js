@@ -9,12 +9,12 @@ export const getArticles = () => ({
   type: GET_ARTICLES,
 });
 
-export const getArticlesSuccess = (articles) => ({
+export const getArticlesSuccess = articles => ({
   type: GET_ARTICLES_SUCCESS,
   articles,
 });
 
-export const showArticle = (articleId) => ({
+export const showArticle = articleId => ({
   type: SHOW_ARTICLE,
   articleId,
 });

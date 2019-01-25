@@ -23,11 +23,11 @@ export class Grid extends Component {
 
     return (
       <Wrapper>
-        { values(articles).map((article) => (
+        { values(articles).map(article => (
           <Article key={article.id} {...article} />
         ))}
       </Wrapper>
-    )
+    );
   }
 }
 
@@ -36,14 +36,14 @@ Grid.propTypes = {
   articles: PropTypes.objectOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
-    })
+    }),
   ).isRequired,
-}
+};
 
 export const mapStateToProps = ({ articles: { list } }) => ({
   articles: list,
-})
+});
 
-export const mapDispatchToProps = (dispatch) => ({
+export const mapDispatchToProps = dispatch => ({
   getArticlesAction: bindActionCreators(getArticles, dispatch),
 });

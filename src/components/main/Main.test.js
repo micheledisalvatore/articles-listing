@@ -23,19 +23,19 @@ describe('Given a Main component', () => {
 
     it('should NOT show the Lightbox', () => {
       expect(wrapper.find(Lightbox)).not.toExist();
-    })
+    });
 
     describe('and an article is selected', () => {
       beforeEach(() => {
         wrapper.setProps({
           selectedArticle: 1,
-        })
+        });
       });
 
       it('should show the Lightbox', () => {
         expect(wrapper.find(Lightbox)).toExist();
-      })
-    })
+      });
+    });
   });
 });
 

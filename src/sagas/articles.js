@@ -24,7 +24,9 @@ export function* getRemoteArticles() {
 
     yield put(getArticlesSuccess(articles));
   } catch (e) {
-    console.error('Error retrieving articles', e)
+    /* eslint-disable no-console */
+    console.error('Error retrieving articles', e);
+    /* eslint-enable */
   }
 }
 

@@ -12,7 +12,7 @@ describe('Given a Lightbox component', () => {
   let component;
   let wrapper;
   let hideArticleActionMock;
-  let events = [];
+  const events = [];
 
   describe('when it is rendered', () => {
     beforeEach(() => {
@@ -36,7 +36,7 @@ describe('Given a Lightbox component', () => {
     afterEach(() => {
       document.addEventListener.mockReset();
       hideArticleActionMock.mockReset();
-    })
+    });
 
     it('should match the snapshot', () => {
       expect(wrapper).toMatchSnapshot();
@@ -44,7 +44,7 @@ describe('Given a Lightbox component', () => {
 
     it('should show the Article in full', () => {
       expect(wrapper.find(Article)).toHaveProp('full', true);
-    })
+    });
 
     describe('and the user clicks on the Content', () => {
       beforeEach(() => {
@@ -53,18 +53,18 @@ describe('Given a Lightbox component', () => {
 
       it('should invoke hideArticleAction', () => {
         expect(hideArticleActionMock).toHaveBeenCalledWith();
-      })
-    })
+      });
+    });
 
     describe('and the user clicks on the Content', () => {
       beforeEach(() => {
-        events.keydown({ keyCode: 27 })
+        events.keydown({ keyCode: 27 });
       });
 
       it('should invoke hideArticleAction', () => {
         expect(hideArticleActionMock).toHaveBeenCalledWith();
-      })
-    })
+      });
+    });
   });
 });
 

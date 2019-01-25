@@ -47,8 +47,8 @@ describe('Given an Article component', () => {
 
       it('should invoke showArticleAction with the right parameter', () => {
         expect(showArticleActionMock).toHaveBeenCalledWith(requiredProps.id);
-      })
-    })
+      });
+    });
 
     describe('and the full property is passed', () => {
       beforeEach(() => {
@@ -64,6 +64,6 @@ describe('Given an Article component', () => {
       it('should render the Content with the full attribute set to true', () => {
         expect(wrapper.find(Content)).toHaveProp('full', true);
       });
-    })
+    });
   });
 });

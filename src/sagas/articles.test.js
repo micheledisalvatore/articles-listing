@@ -2,11 +2,9 @@
 
 import {
   call,
-  put,
   takeLatest,
 } from 'redux-saga/effects';
 
-import { getArticlesSuccess } from '../actions/articles';
 import { GET_ARTICLES } from '../constants/articles';
 
 import { getRemoteArticles, fetchArticles, watchActions } from './articles';

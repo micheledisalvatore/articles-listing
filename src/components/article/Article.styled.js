@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Img = styled.img`{
   max-width: 100%;
-}`
+}`;
 
 export const TextWrapper = styled.div`{
   padding: 10px;
@@ -31,4 +31,4 @@ export const Content = styled.button`{
   & > p {
     margin-top: 0;
   }
-}`
+}`;
