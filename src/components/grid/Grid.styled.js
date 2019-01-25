@@ -15,16 +15,28 @@ export const Wrapper = styled.div`{
     margin: 5px;
 
     &:nth-child(1) {
-      width: calc(${100 * 2 / 3}% - 10px);
+      width: calc(100% - 10px);
     }
-    &:nth-child(n+2):nth-child(-n+5) {
-      width: calc(${100 * 1 / 3}% - 10px);
-    }
-    &:nth-child(n+6):nth-child(-n+9) {
-      width: calc(${100 * 1 / 4}% - 10px);
+    &:nth-child(n+2):nth-child(-n+9) {
+      width: calc(${100 * 1 / 2}% - 10px);
     }
     &:nth-child(n+10) {
-      width: calc(${100 * 1 / 6}% - 10px);
+      width: calc(${100 * 1 / 3}% - 10px);
+    }
+
+    @media only screen and (min-width : 768px) {
+      &:nth-child(1) {
+        width: calc(${100 * 2 / 3}% - 10px);
+      }
+      &:nth-child(n+2):nth-child(-n+5) {
+        width: calc(${100 * 1 / 3}% - 10px);
+      }
+      &:nth-child(n+6):nth-child(-n+9) {
+        width: calc(${100 * 1 / 4}% - 10px);
+      }
+      &:nth-child(n+10) {
+        width: calc(${100 * 1 / 6}% - 10px);
+      }
     }
   }
 }`;

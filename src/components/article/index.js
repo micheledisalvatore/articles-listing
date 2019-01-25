@@ -1,3 +1,5 @@
-import { Article } from './Article';
+import { connect } from 'react-redux';
 
-export default Article;
+import { Article, mapDispatchToProps } from './Article';
+
+export default connect(null, mapDispatchToProps)(Article);

@@ -1,0 +1,4 @@
+export const GET_ARTICLES = 'ARTICLES::GET';
+export const GET_ARTICLES_SUCCESS = 'ARTICLES::GET_SUCCESS';
+export const SHOW_ARTICLE = 'ARTICLES::SHOW';
+export const HIDE_ARTICLE = 'ARTICLES::HIDE';

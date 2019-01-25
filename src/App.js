@@ -1,27 +1,14 @@
-import React, { Component, Fragment } from 'react';
+import React from 'react';
+import { Provider } from 'react-redux';
 
-import Grid from './components/grid';
+import { store } from './config/store';
 
-class App extends Component {
-  state = {
-    articles: [],
-  }
+import Main from './components/main';
 
-  componentWillMount() {
-    window.fetch('http://www.mocky.io/v2/5c4a0ace340000da09269450')
-      .then(response => response.json())
-      .then((articles) => { this.setState({ articles }) });
-  }
-
-  render() {
-    const { articles } = this.state;
-
-    return (
-      <Fragment>
-        <Grid articles={articles} />
-      </Fragment>
-    );
-  }
-}
+const App = () => (
+  <Provider store={store}>
+    <Main />
+  </Provider>
+);
 
 export default App;

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Img = styled.img`{
-  width: 100%;
+  max-width: 100%;
 }`
 
 export const TextWrapper = styled.div`{
@@ -13,10 +13,20 @@ export const TextWrapper = styled.div`{
   }
 }`;
 
-export const Content = styled.div`{
-  overflow: hidden;
-  line-height: 1.2rem;
-  max-height: ${1.2 * 3}rem;
+export const Content = styled.button`{
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+
+  ${({ full }) => !full && `
+    overflow: hidden;
+    line-height: 1.2rem;
+    max-height: ${1.2 * 3}rem;
+  `}
 
   & > p {
     margin-top: 0;

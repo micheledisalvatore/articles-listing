@@ -1,3 +1,5 @@
-import { Grid } from './Grid';
+import { connect } from 'react-redux';
 
-export default Grid;
+import { Grid, mapStateToProps, mapDispatchToProps } from './Grid';
+
+export default connect(mapStateToProps, mapDispatchToProps)(Grid);
