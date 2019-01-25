@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 
 import { hideArticle } from '../../actions/articles';
@@ -39,6 +40,15 @@ export class Lightbox extends Component {
       </Wrapper>
     )
   }
+}
+
+Lightbox.propTypes = {
+  hideArticleAction: PropTypes.func.isRequired,
+  article: PropTypes.shape({
+    artwork: PropTypes.string.isRequired,
+    content: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+  }).isRequired
 }
 
 export const mapStateToProps = ({ articles: { list, selected } }) => ({

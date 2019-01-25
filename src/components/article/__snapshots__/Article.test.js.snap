@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given an Article component when it is rendered and the full property is passed should match the snapshot 1`] = `
+<div>
+  <styled.img
+    alt="Foo Title"
+    src="http://foo.bar"
+  />
+  <styled.div>
+    <h3>
+      Foo Title
+    </h3>
+    <styled.button
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<p>foo html</p>",
+        }
+      }
+      full={true}
+      onClick={[Function]}
+    />
+  </styled.div>
+</div>
+`;
+
+exports[`Given an Article component when it is rendered should match the snapshot 1`] = `
+<div>
+  <styled.img
+    alt="Foo Title"
+    src="http://foo.bar"
+  />
+  <styled.div>
+    <h3>
+      Foo Title
+    </h3>
+    <styled.button
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<p>foo html</p>",
+        }
+      }
+      full={false}
+      onClick={[Function]}
+    />
+  </styled.div>
+</div>
+`;

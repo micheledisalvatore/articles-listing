@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 
 import { showArticle } from '../../actions/articles';
@@ -17,6 +18,19 @@ export const Article = ({ artwork, content, full, id, title, showArticleAction }
       </TextWrapper>
     </div>
   )
+}
+
+Article.propTypes = {
+  artwork: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
+  full: PropTypes.bool,
+  id: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  showArticleAction: PropTypes.func.isRequired,
+}
+
+Article.defaultProps = {
+  full: false,
 }
 
 export const mapDispatchToProps = (dispatch) => ({

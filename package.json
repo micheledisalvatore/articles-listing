@@ -5,6 +5,7 @@
   "dependencies": {
     "normalize.css": "^8.0.1",
     "normalizr": "^3.3.0",
+    "prop-types": "^15.6.2",
     "ramda": "^0.26.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
@@ -29,5 +30,10 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.8.0",
+    "jest-enzyme": "^7.0.1"
+  }
 }

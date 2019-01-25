@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { values } from 'ramda';
 
@@ -28,6 +29,15 @@ export class Grid extends Component {
       </Wrapper>
     )
   }
+}
+
+Grid.propTypes = {
+  getArticlesAction: PropTypes.func.isRequired,
+  articles: PropTypes.objectOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+    })
+  ).isRequired,
 }
 
 export const mapStateToProps = ({ articles: { list } }) => ({

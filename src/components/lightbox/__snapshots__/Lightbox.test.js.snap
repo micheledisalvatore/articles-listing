@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given a Lightbox component when it is rendered should match the snapshot 1`] = `
+<styled.div>
+  <styled.button
+    onClick={[MockFunction]}
+  />
+  <Connect(Article)
+    artwork="http://foo.bar"
+    content="foo"
+    full={true}
+    title="Bar Title"
+  />
+</styled.div>
+`;

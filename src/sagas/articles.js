@@ -15,7 +15,7 @@ export const fetchArticles = () => window.fetch('http://www.mocky.io/v2/5c4a0ace
 export function* getRemoteArticles() {
   try {
     const response = yield call(fetchArticles);
-    console.log({response})
+
     const {
       entities: {
         articles,
